@@ -51,20 +51,23 @@ a {
     -webkit-box-orient: vertical;
     overflow: hidden;
 }
-
 /* ======================= HEADER ======================= */
+
 .header {
+    
     background-color: #e6f0ff;
-    height: 100vh;
-    position: relative;
+    position: sticky;
+    top: -18px;
+    z-index: 10;
 }
 
 /* --- Navigation --- */
 
 .navbar {
+    padding: 38px 0 20px 0;
     display: flex;
     align-items: center;
-    padding-top: 38px;
+    /* padding-top: 38px; */
 }
 
 .navbar ul {
@@ -102,10 +105,17 @@ a {
     border-radius: 8px;
 }
 
+/* ======================= HERO ======================= */
+.hero-main {
+    background-color: #e6f0ff;
+    height: calc(100vh - 98px);
+    position: relative;
+}
+
 /* --- Hero Info --- */
 
 .hero {
-    margin-top: 130px;
+    padding-top: 110px;
 }
 
 .hero .info {
@@ -181,8 +191,21 @@ div.clients .row:not(:first-of-type) {
 .clients .clients-logo {
     margin-top: 70px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+    gap: 1px;
+}
+
+.clients .clients-logo a {
+    display: flex;
+    align-items: center;
+    padding: 0 42px;
+    height: 90px;
+    border-radius: 10px;
+}
+
+.clients .clients-logo a:hover {
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.16);
 }
 
 /* ======================= Guide ======================= */
@@ -632,7 +655,7 @@ div.clients .row:not(:first-of-type) {
 }
 .footer .column .social-group {
     display: flex;
-    gap: 15px;
+    gap: 16px;
     height: 30px;
 }
 .footer .column .social-group .link:hover img {
