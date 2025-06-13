@@ -6,6 +6,11 @@ html {
     font-size: 62.5%; /* == 10px */
 }
 
+html,
+body {
+    scroll-behavior: smooth;
+}
+
 :root {
     --primary-color: #0f1b4c;
 }
@@ -54,7 +59,6 @@ a {
 /* ======================= HEADER ======================= */
 
 .header {
-    
     background-color: #e6f0ff;
     position: sticky;
     top: -18px;
@@ -110,41 +114,37 @@ a {
     background-color: #e6f0ff;
     height: calc(100vh - 98px);
     position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 /* --- Hero Info --- */
 
-.hero {
-    padding-top: 110px;
-}
-
-.hero .info {
+.hero-main .info {
     width: 51%;
 }
 
-.hero .sub-title {
+.hero-main .sub-title {
     color: #687690;
     font-size: 1.8rem;
-    font-style: normal;
     font-weight: 500;
-    line-height: normal;
     letter-spacing: 0.018rem;
+    line-height: 1.5;
 }
 
-.hero .title {
+.hero-main .title {
     margin-top: 8px;
     color: #000336;
     font-size: 6.2rem;
-    font-style: normal;
     font-weight: 700;
     line-height: 118.75%;
 }
 
-.hero .desc {
+.hero-main .desc {
     margin-top: 30px;
     color: #5a6473;
     font-size: 1.8rem;
-    font-style: normal;
     font-weight: 400;
     line-height: 177.78%;
 }
@@ -212,7 +212,7 @@ div.clients .row:not(:first-of-type) {
 
 .guide {
     margin-top: 40px;
-    padding: 79px 0;
+    padding: 119px 0;
 }
 
 .guide .sub-title {
