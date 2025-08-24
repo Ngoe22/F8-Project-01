@@ -86,21 +86,39 @@
         <link rel="stylesheet" href="./assets/css/reset.css" />
         <!-- Font -->
         <link rel="stylesheet" href="./assets/fonts/stylesheet.css" />
+        <!-- Icon -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+            integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
         <!-- Style -->
         <link rel="stylesheet" href="./assets/css/styles.css" />
-
+        <link rel="stylesheet" href="./assets/css/responesive.css" />
         <!-- Else  -->
     </head>
     <body id="Home">
         <div class="header">
-            <div class="content">
+            <div class="content header__inner">
+                <!--    pc navbar 
+                 -->
                 <nav class="navbar">
+                    <!-- Tablet & Phone -->
+                    <label class="PnT_navMenu--wrap" for="res_navbar__checkbox">
+                        <i class="fa-solid fa-bars PnT_navMenu"></i>
+                    </label>
                     <!-- Logo -->
-                    <a href="#Home"
-                        ><img src="./assets/img/Logo.svg" alt="Besnik."
-                    /></a>
+                    <a href="#Home" class="navbarLogo--wrap">
+                        <img
+                            src="./assets/img/Logo.svg"
+                            alt="Besnik."
+                            class="navbarLogo"
+                        />
+                    </a>
                     <!-- Navigation -->
-                    <ul>
+                    <ul class="nav__list" id="nav__list">
                         <li><a href="#Home">Home</a></li>
                         <li><a href="#Services">Services</a></li>
                         <li><a href="#Features">Features</a></li>
@@ -113,9 +131,59 @@
                         <a href="#!" class="btn action-btn">Sign up</a>
                     </div>
                 </nav>
+                <!-- PnT navbar 
+                 -->
+                <nav class="res_navbar">
+                    <input
+                        type="checkbox"
+                        class="res_navbar__checkbox"
+                        id="res_navbar__checkbox"
+                        hidden
+                    />
+                    <!-- background -->
+                    <label
+                        class="res_navbar__overlay"
+                        for="res_navbar__checkbox"
+                    ></label>
+                    <!-- board -->
+                    <div class="res_navbar__menuDrawer">
+                        <img
+                            src="./assets/img/Logo.svg"
+                            alt="Besnik."
+                            class="res_navbar__Logo"
+                        />
+                        <!-- list -->
+                        <ul class="res_navbar__List">
+                            <li class="res_navbar__item">
+                                <a href="#Home">Home</a>
+                            </li>
+                            <li class="res_navbar__item">
+                                <a href="#Services">Services</a>
+                            </li>
+                            <li class="res_navbar__item">
+                                <a href="#Features">Features</a>
+                            </li>
+                            <li class="res_navbar__item">
+                                <a href="#Resources">Resources</a>
+                            </li>
+                            <li class="res_navbar__item">
+                                <a href="#Contact">Contact</a>
+                            </li>
+                        </ul>
+
+                        <div class="action res_navbar__action">
+                            <a href="#!" class="btn res_navbar__actionBtn"
+                                >Sign up</a
+                            >
+                            <a href="#!" class="res_navbar__actionLink"
+                                >Sign in</a
+                            >
+                        </div>
+                    </div>
+                </nav>
             </div>
         </div>
-        <main>
+        <main >
             <header class="hero-main">
                 <div class="content">
                     <div class="info">
@@ -139,7 +207,7 @@
             </header>
             <div class="clients">
                 <div class="content">
-                    <div class="row">
+                    <div class="row clients__infoRow1">
                         <!-- Logo -->
                         <img src="./assets/img/Logo.svg" alt="Besnik." />
                         <!-- Stars -->
@@ -149,7 +217,7 @@
                             alt="Stars"
                         />
                     </div>
-                    <div class="row">
+                    <div class="row clients__infoRow2">
                         <p class="row-desc">
                             More than 45,000+ companies trust besnik
                         </p>
@@ -256,11 +324,11 @@
             <div class="featured" id="Features">
                 <div class="content">
                     <h2 class="featured-header">Featured Properties</h2>
-                    <div class="row">
+                    <div class="row  featured__row1">
                         <p class="desc">
                             Everything you need to know when you're looking
                         </p>
-                        <a href="#!" class="link"
+                        <a href="#!" class="link featured__row1_link"
                             ><span>View All Properties</span>
                             <img
                                 src="./assets/img/guide-arrow.svg"
@@ -269,7 +337,7 @@
                         /></a>
                     </div>
                     <!-- LIST -->
-                    <div class="list">
+                    <div class="list featured__list">
                         <!-- ITEM 1 -->
                         <div class="items">
                             <!-- IMG -->
@@ -310,7 +378,7 @@
                                         <span class="label">2 both</span>
                                     </div>
                                     <!-- info 3 -->
-                                    <div class="info">
+                                    <div class="info ">
                                         <img
                                             src="./assets/img/feature-sqft-icon.svg"
                                             alt="sqft"
@@ -588,7 +656,7 @@
                 </div>
             </div>
         </main>
-        <div class="footer" id="Contact">
+        <div  class="footer" id="Contact">
             <div class="content">
                 <div class="row-link">
                     <div class="column">
