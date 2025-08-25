@@ -136,6 +136,14 @@
         flex-wrap: wrap;
     }
 
+    .featured .row .desc {
+        min-width: auto;
+    }
+
+    .featured .list .items .label {
+        flex-shrink: 0;
+    }
+
     /* stat */
     .stats .row .img-block {
         display: none;
@@ -155,6 +163,11 @@
 
     /* subscribe */
 
+    .subscription .body {
+        height: auto;
+        padding: 40px 0;
+    }
+
     .subscription .body img.subsc {
         display: none;
     }
@@ -172,11 +185,11 @@
         width: 100%;
     }
 
+    /* footer */
     .footer .row-link {
         display: flex;
         gap: 50px;
         flex-wrap: wrap;
-
     }
 }
 
@@ -247,6 +260,7 @@
 
     .featured__row1 {
         flex-wrap: wrap;
+        column-gap: 200px;
     }
 
     .featured__row1_link {

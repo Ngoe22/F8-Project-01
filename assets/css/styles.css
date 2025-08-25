@@ -337,6 +337,7 @@ div.clients .row:not(:first-of-type) {
 }
 
 .featured .link {
+
     display: flex;
     align-items: center;
     color: #0689ff;
@@ -344,6 +345,11 @@ div.clients .row:not(:first-of-type) {
     font-weight: 600;
 }
 
+
+.featured .link span {
+    flex-shrink: 0;
+    width: auto;
+}
 .featured .link .arrow {
     margin-left: 8px;
 }
